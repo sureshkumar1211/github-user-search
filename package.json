@@ -2,6 +2,7 @@
   "name": "github-search",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://sureshkumar1211.github.io/github-user-search",
   "dependencies": {
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
@@ -14,9 +15,12 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
+    "gh-pages": "^2.2.0",
     "react-scripts": "latest"
   },
   "browserslist": {
